@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Anton, Roboto_Flex } from 'next/font/google';
-import { ReactLenis } from 'lenis/react';
 
 import 'lenis/dist/lenis.css';
 import './globals.css';
@@ -13,6 +12,7 @@ import Preloader from '../components/Preloader';
 import StickyEmail from './_components/StickyEmail';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import Script from 'next/script';
+import ClientLayout from '@/components/ClientLayout';
 
 const antonFont = Anton({
     weight: '400',
@@ -54,13 +54,7 @@ export default function RootLayout({
             <body
                 className={`${antonFont.variable} ${robotoFlex.variable} antialiased`}
             >
-                <ReactLenis
-                    root
-                    options={{
-                        lerp: 0.1,
-                        duration: 1.4,
-                    }}
-                >
+                <ClientLayout>
                     {/* <a
                         href="https://forms.gle/t73XYJgWD5cJNr6e8"
                         target="_blank"
@@ -79,7 +73,7 @@ export default function RootLayout({
                     <ScrollProgressIndicator />
                     <ParticleBackground />
                     <StickyEmail />
-                </ReactLenis>
+                </ClientLayout>
             </body>
         </html>
     );
