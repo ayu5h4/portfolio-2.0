@@ -11,7 +11,7 @@ import Project from './Project';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
-const ProjectList = () => {
+const ProjectList = ({ className }: { className?: string }) => {
     const containerRef = useRef<HTMLDivElement>(null);
     const projectListRef = useRef<HTMLDivElement>(null);
     const imageContainer = useRef<HTMLDivElement>(null);
@@ -62,7 +62,7 @@ const ProjectList = () => {
 
                 gsap.to(imageContainer.current, {
                     y: offsetTop - imageRect.height / 2,
-                    duration: 1,
+                    duration: 0.3,
                     opacity: 1,
                 });
             }) as any;
@@ -84,7 +84,7 @@ const ProjectList = () => {
                     start: 'top bottom',
                     end: 'top 80%',
                     toggleActions: 'restart none none reverse',
-                    scrub: 1,
+                    scrub: 0.5,
                 },
             });
 
@@ -106,7 +106,7 @@ const ProjectList = () => {
     };
 
     return (
-        <section className="pb-section" id="selected-projects">
+        <section className={cn("pb-section", className)} id="selected-projects">
             <div className="container">
                 <SectionTitle title="SELECTED PROJECTS" />
 

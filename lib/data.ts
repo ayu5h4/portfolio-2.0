@@ -129,5 +129,3 @@ export const PROJECTS: IProject[] = [
         role: '',
     },
 ];
-
-export const MY_EXPERIENCE = [];
