@@ -1,18 +1,5 @@
 # 🚀 Portfolio | Ayush Ghodake
 
-A modern, responsive personal portfolio website built with **Next.js 15**, **React 19**, and **Tailwind CSS**. It features smooth scrolling, custom animations, and a showcase of my projects in software development and machine learning.
-
-![Portfolio Preview](https://github.com/user-attachments/assets/ade45c4b-b2cb-46cb-b8a6-31cad3bd0c5a)
-
-## ✨ Features
-
-* **Framework:** Built on [Next.js 15](https://nextjs.org/) (App Router) & React 19.
-* **Styling:** Styled with [Tailwind CSS](https://tailwindcss.com/) for a clean, responsive design.
-* **Animations:** Powered by [GSAP](https://gsap.com/) for timeline-based animations.
-* **Smooth Scrolling:** Integrated [Lenis](https://github.com/darkroomengineering/lenis) for smooth, inertia-based scrolling.
-* **Icons:** Using [Lucide React](https://lucide.dev/) for consistent iconography.
-* **Type Safety:** Written in **TypeScript**.
-
 ## 🛠️ Tech Stack
 
 ### Frontend & UI
