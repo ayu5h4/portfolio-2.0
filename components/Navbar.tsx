@@ -26,12 +26,16 @@ const MENU_LINKS = [
         url: '/#my-experience',
     },
     {
+        name: 'Achievements',
+        url: '/#my-achievements',
+    },
+    {
         name: 'Projects',
         url: '/#selected-projects',
     },
     {
         name: 'Resume',
-        url: 'https://drive.google.com/file/d/1vpj8IfoKebn1A211Jh63dx1CTeq-0DP_/view?usp=drive_link',
+        url: 'https://docs.google.com/document/d/1K7s8rN6gR7CCpnJywaEkOcFb7Ha55TSR/edit?usp=sharing&ouid=102979584146100805468&rtpof=true&sd=true',
     },
 ];
 

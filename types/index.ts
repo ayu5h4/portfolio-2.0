@@ -28,3 +28,18 @@ export interface IProject {
     liveUrl?: string;
     sourceCode?: string;
 }
+
+export interface IExperience {
+    company: string;
+    location: string;
+    position: string;
+    startDate: string;
+    endDate: string;
+    achievements: string[];
+}
+
+export interface IAchievement {
+    title: string;
+    issuer: string;
+    url: string;
+}

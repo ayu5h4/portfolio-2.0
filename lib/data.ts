@@ -1,4 +1,4 @@
-import { IProject } from '@/types';
+import { IProject, IExperience, IAchievement } from '@/types';
 
 export const GENERAL_INFO = {
     email: 'ayushghodake1221@gmail.com',
@@ -127,5 +127,33 @@ export const PROJECTS: IProject[] = [
         longThumbnail: '',
         images: ['/projects/images/mnist.png'],
         role: '',
+    },
+];
+
+export const EXPERIENCES: IExperience[] = [
+    {
+        company: 'Prime Numerics',
+        location: 'Pune, India',
+        position: 'AI Research Intern',
+        startDate: 'February 2026',
+        endDate: 'April 2026',
+        achievements: [
+            'Architected a scalable RESTful backend with full CRUD operations to securely manage sensitive medical records for 500+ patients, reducing data retrieval errors by ~40%.',
+            'Designed and shipped interactive clinical dashboards that visualized complex patient trends in real time, helping healthcare providers improve diagnostic accuracy by an estimated 30%.',
+            'Optimized data processing pipelines by refactoring query logic and introducing caching layers, cutting average API response latency by ~35% for critical patient-monitoring features.',
+        ],
+    },
+];
+
+export const ACHIEVEMENTS: IAchievement[] = [
+    {
+        title: 'AWS Academy Cloud Foundations',
+        issuer: 'Amazon Web Services (AWS Academy)',
+        url: 'https://drive.google.com/file/d/1SCPrbPekXXaiKs_aoraVXToMZCJODhbx/view?usp=drive_link',
+    },
+    {
+        title: 'AWS Academy Graduate - Microservices and CI/CD Pipeline Builder',
+        issuer: 'Amazon Web Services (AWS Academy)',
+        url: 'https://drive.google.com/file/d/112d-3a9Na0v8HmsLj8DE9r7PTdFkGvIn/view?usp=sharing',
     },
 ];
